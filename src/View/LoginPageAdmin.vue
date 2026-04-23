@@ -21,16 +21,17 @@
               class="w-full bg-transparent outline-none text-[#868686] py-1" />
           </fieldset>
           <button 
+          @click="gotodashboard"
             type="submit" 
-            class="w-full bg-[#1E3A8A] text-white font-bold py-4 rounded-2xl transition duration-300 mt-4 shadow-lg">
+            class="w-full bg-[#1E3A8A] text-white font-bold py-4 rounded-2xl mt-4 cursor-pointer">
             Sign In
           </button>
         </form>
       </div>
     </div>
-    <div class="hidden md:block w-1/2  bg-[#1E3A8A] relative">
-      <img :src="Signin" class="absolute inset-0 w-full h-full object-cover" />
-    </div>
+    <div class="hidden md:flex w-1/2 bg-[#1E3A8A] items-center justify-center">
+  <img :src="Signin" class="max-w-[70%] h-auto" />
+</div>
   </div>
 </template>
 <script>
@@ -41,6 +42,10 @@ export default {
     return {
       Signin: Signin
     }
-  }
-}
+  },
+  methods: {
+      gotodashboard() {
+        this.$router.push('/dashboard');
+      }
+  }}
 </script>
