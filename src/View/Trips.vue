@@ -1,12 +1,15 @@
 <template>
-<SideNavigationBar />
-
+    <SideNavigationBar />
+    
 </template>
 
 <script>
-import SideNavigationBar from '@/component/SideNavigationBar.vue';
+import SideNavigationBar from '../component/SideNavigationBar.vue'
 
 export default {
-  name: 'companies'
+  name: 'Trips',
+  components: {
+  SideNavigationBar
+  }
 }
 </script>

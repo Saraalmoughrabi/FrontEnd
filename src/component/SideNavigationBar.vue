@@ -1,6 +1,6 @@
 <template>
   <div class="flex h-screen w-full ">
-    <aside class="w-50 h-full bg-[#1E3A8A] text-white flex flex-col">
+    <aside class="w-54 h-full bg-[#1E3A8A] text-white flex flex-col">
       <div class="p-6 text-3xl  whitespace-nowrap">
         Trip Station 
       </div>
@@ -25,7 +25,7 @@
           <img :src="Home" alt="companies icon" class="w-6 h-6 object-contain" />
           <span>Companies</span>
         </div>
-<button type="button" class=" flex items-center gap-3 py-3 px-4 rounded-full ml-5 hover:bg-white hover:text-[#1E3A8A] font-bold transition cursor-pointer group"">Logout</button>
+<button type="button" class=" flex items-center gap-3 py-3 px-4 rounded-full ml-5 hover:bg-white hover:text-[#1E3A8A] font-bold transition cursor-pointer group">Logout</button>
       </nav>
     </aside>
     <div class="flex-1 flex flex-col">
@@ -33,7 +33,8 @@
         <div class="h-full flex items-center px-8">
           </div>
       </header>
-      <main class="p-8 ">
+      <main class="p-8 overflow-y-auto flex-1">
+        <slot></slot>
       </main>
     </div>
   </div>

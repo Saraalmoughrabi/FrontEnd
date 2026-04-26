@@ -1,11 +1,16 @@
 <template>
-<SideNavigationBar />
-<h1>Hi</h1>
+    <SideNavigationBar />
+   
 </template>
+
 
 <script>
 import SideNavigationBar from '../component/SideNavigationBar.vue'
+
 export default {
-  name: 'companiesPage'
+  name: 'CompaniesPage',
+  components: {
+  SideNavigationBar
+  }
 }
 </script>
